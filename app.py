@@ -10,9 +10,37 @@ st.set_page_config(
     page_icon="✨",
     layout="wide"
 )
+st.markdown("""
+    <style>
+    /* Fondo principal */
+    .stApp {
+        background-color: #f9f5ff; /* Color de fondo general */
+    }
+
+    /* Títulos */
+    h1, h2, h3 {
+        color: #7b2cbf; /* Color morado elegante */
+    }
+
+    /* Barras de progreso */
+    .stProgress > div > div > div > div {
+        background-color: #ff6f61; /* Color coral */
+    }
+
+    /* Sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #f1e9ff;
+    }
+
+    /* Texto general */
+    p, label, span {
+        color: #333333;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Título y descripción
-st.title("✨Analizador de Sentimientos y Palabras")
+st.title("✨Analizador de Sentimientos y Palabras✨")
 st.markdown("""
 Esta aplicación utiliza TextBlob para realizar un análisis básico de texto:
 - Análisis de sentimiento y subjetividad
